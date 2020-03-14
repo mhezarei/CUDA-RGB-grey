@@ -1,6 +1,6 @@
 # RGB-grey
 
-This project is intented to convert a RGB image to a greyscale one using parallel programming which results into ~100-200x (exactly 203x speed for the sample.jpg included here) speedup comparing to a serial program doing the same conversion.
+This project is intented to convert a RGB image to a greyscale one using parallel programming which results into ~100-200x (0.5ms for parallel version and 107ms for serial version which results into ~203x speedup tested on the sample.jpg included in the repo) speedup comparing to a serial program doing the same conversion.
 
 For a guide about parallel programming you could refer to [CUDA C++](http://docs.nvidia.com/cuda/cuda-c-programming-guide/index.html).
 
