@@ -18,7 +18,7 @@ $ sudo apt-get install libopencv-dev
 
 Compile the parallel program using the following command:
 ```
-$ nvcc kernel.cu main.cpp -o RGB_grey_parallel `pkg-config opencv --cflags --libs`
+$ nvcc kernel.cu main_parallel.cpp -o RGB_grey_parallel `pkg-config opencv --cflags --libs`
 ```
 And run it using this (and to see the execution time):
 ```
@@ -28,7 +28,7 @@ If the output file is not specified, then the result is saved into "output.png".
 
 You could use this to run the serial program which does the same thing:
 ```
-$ g++ kernel.cu main.cpp -o RGB_grey_serial `pkg-config opencv --cflags --libs`; ./RGB_grey_serial sample.jpg [Output file]
+$ g++ main_serial.cpp -o RGB_grey_serial `pkg-config opencv --cflags --libs`; ./RGB_grey_serial sample.jpg [Output file]
 ```
 Again, the result will be saved into "output.png" if not specified.
 
